@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Form";
+}
+@model GasMileageCalculator.Models.GasMileage.FormResultViewModel
+
+	<form asp-controller="GasMileage" asp-action="FormResult" method="post">
+
+		<label asp-for="MPG"> Your Vehicle's MPG</label>
+		<input asp-for="MPG" />
+
+		<label asp-for="Gallons"> Gallons In Tank</label>
+		<input asp-for="Gallons" />
+
+		<label asp-for="TripDistance"> How Far is Your Trip?</label>
+		<input asp-for="TripDistance" />
+
+		<button>Sumbit</button>
+
+	</form>
+
